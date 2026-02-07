@@ -1,12 +1,14 @@
 {
   "name": "bura",
   "version": "0.0.0",
+  "description": "Frontend + Backend for Card app",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "start-backend": "node server.js"
   },
   "prettier": {
     "overrides": [
@@ -19,6 +21,9 @@
     ]
   },
   "private": true,
+  "engines": {
+    "node": "22.x"
+  },
   "dependencies": {
     "@angular/common": "^20.1.0",
     "@angular/compiler": "^20.1.0",
@@ -29,9 +34,11 @@
     "aws-sdk": "^2.1693.0",
     "axios": "^1.13.4",
     "dotenv": "^17.2.3",
+    "express": "^4.18.2",
     "mongodb": "^7.0.0",
     "mongoose": "^9.1.5",
     "rxjs": "~7.8.0",
+    "socket.io": "^4.8.3",
     "socket.io-client": "^4.8.3",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
