@@ -9,7 +9,6 @@ const { buffer } = require('stream/consumers');
 const axios = require("axios");
 const AWS = require('aws-sdk');
 const { stringify } = require('querystring');
-const { idText } = require('typescript');
 const { SocketAddress } = require('net');
 require('dotenv').config({ path: './.env' });
 
